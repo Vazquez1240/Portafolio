@@ -1,11 +1,10 @@
 import {GitHub, LinkedIn} from "@mui/icons-material";
 import {LinkRedes} from "@/components/Link/LinkRedes";
-
+import {MenuComponent} from "@/components/Menu/MenuComponent";
 export const Header = () => {
     return (
-        <header
-            className="mx-auto container px-2 pt-44  lg:pt-0 lg:w-[1240px] lg:flex-row mt-0 lg:max-w-[100%] fixed ">
-            <div className="lg:flex lg:justify-between lg:items-center mt-10">
+        <header className="mx-auto container lg:px-2 lg:pt-44  xl:pt-0 lg:w-[1240px] lg:flex-row lg:max-w-[100%] fixed sm:max-w-full ">
+            <div className="sm:hidden md:hidden  lg:flex xl:flex lg:justify-between lg:items-center mt-10 ">
                 <div className=" mx-auto mt-10 flex gap-10 justify-start cursor-pointer lg:mt-0">
 
                     <div className='hover:text-blue-500 transition-colors duration-300'>
@@ -26,6 +25,9 @@ export const Header = () => {
                     <LinkRedes titulo='Github' url='https://github.com/Vazquez1240' icono={<GitHub/>}
                                className='hover:text-blue-500 transition-colors duration-300'/>
                 </div>
+            </div>
+            <div className=' sm:right-0 sm:flex md:block lg:hidden xl:hidden'>
+                <MenuComponent />
             </div>
         </header>
 

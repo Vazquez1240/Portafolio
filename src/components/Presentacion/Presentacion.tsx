@@ -6,7 +6,6 @@ import withReactContent from 'sweetalert2-react-content'
 
 export const Presentacion = () => {
 
-    let enableAlert = false
 
     const descargarCv = () => {
 
@@ -27,7 +26,7 @@ export const Presentacion = () => {
     }
 
     return (
-        <section className=" mx-auto mt-[10%] max-w-[75%] ">
+        <section className=" mx-auto lg:mt-[10%] max-w-[75%] sm:mt-[30%]">
             <div className='text-left lg:flex-col lg:justify-center lg:items-center md:gap-x-4 max-w-[100%] '>
                 <div className='flex items-center lg:w-4/5'>
                     <h1 className=" text-3xl font-bold lg:text-5xl  text-dark-700 dark:text-dark-200">
@@ -50,9 +49,9 @@ export const Presentacion = () => {
                         ciudad de Monterrey, Nuevo León.
                     </h2>
                 </div>
-                <div className='mt-8 flex gap-10'>
-                    <Button onClick={descargarCv} className='hover:bg-sky-900 hover:text-white transform transition-transform hover:scale-105 duration-300 inline-flex items-center px-5 text-base font-medium ' startIcon={<Download/>}>Descargar CV</Button>
-                    <Button onClick={copiarCorreo} className='hover:bg-sky-900 hover:text-white transform transition-transform hover:scale-105 duration-300 inline-flex items-center px-5 text-base font-medium ' startIcon={<Email/>}>vazquezmartin1240@gmail.com</Button>
+                <div className='sm:max-w-[50%]lg:mt-8 lg:gap-10 flex sm:flex-col sm:gap-5 sm:mt-2'>
+                    <Button onClick={descargarCv} className='hover:bg-sky-900 sm:bg-sky-900 sm:text-white  hover:text-white transform transition-transform lg:hover:scale-105 duration-300 inline-flex items-center lg:px-5 text-base lg:font-medium ' startIcon={<Download/>}>Descargar CV</Button>
+                    <Button onClick={copiarCorreo} className='hover:bg-sky-900 sm:bg-sky-900 sm:text-white hover:text-white transform transition-transform lg:hover:scale-105 duration-300 inline-flex items-center lg:px-5 lg:text-base lg:font-medium ' startIcon={<Email/>}>vazquezmartin1240@gmail.com</Button>
                 </div>
             </div>
         </section>
