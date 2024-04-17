@@ -26,7 +26,7 @@ export const Presentacion = () => {
     }
 
     return (
-        <section className=" mx-auto lg:mt-[10%] max-w-[85%] sm:mt-[30%]">
+        <section className=" mx-auto lg:mt-[10%] md:max-w-[85%] sm:max-w-[85%] lg:max-w-[70%] xl:max-w-[70%] sm:mt-[30%]">
             <div className='text-left lg:flex-col lg:justify-center lg:items-center md:gap-x-4 max-w-[100%] '>
                 <div className='flex items-center lg:w-4/5 sm:flex-col md:flex-col sm:h-[15rem] lg:flex-row'>
                     <div className='sm:flex md:flex lg:hidden xl:hidden  w-3/12'>
