@@ -3,9 +3,9 @@ import {LinkRedes} from "@/components/Link/LinkRedes";
 import {MenuComponent} from "@/components/Menu/MenuComponent";
 export const Header = () => {
     return (
-        <header className="mx-auto container lg:px-2 lg:pt-44  xl:pt-0 lg:w-[1240px] lg:flex-row lg:max-w-[100%] fixed sm:max-w-full ">
+        <header className="mx-auto container lg:px-2 lg:pt-1  lg:w-[1240px] lg:flex-row lg:max-w-[100%] fixed sm:max-w-full ">
             <div className="sm:hidden md:hidden  lg:flex xl:flex lg:justify-between lg:items-center mt-10 ">
-                <div className=" mx-auto mt-10 flex gap-10 justify-start cursor-pointer lg:mt-0">
+                <div className=" mx-auto xl:mt-0 flex gap-10 justify-start cursor-pointer">
 
                     <div className='hover:text-blue-500 transition-colors duration-300'>
                         Proyectos
