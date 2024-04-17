@@ -49,9 +49,9 @@ export const Presentacion = () => {
                         ciudad de Monterrey, Nuevo León.
                     </h2>
                 </div>
-                <div className='sm:max-w-[50%]lg:mt-8 lg:gap-10 flex sm:flex-col sm:gap-5 sm:mt-2'>
-                    <Button onClick={descargarCv} className='hover:bg-sky-900 sm:bg-sky-900 sm:text-white  hover:text-white transform transition-transform lg:hover:scale-105 duration-300 inline-flex items-center lg:px-5 text-base lg:font-medium ' startIcon={<Download/>}>Descargar CV</Button>
-                    <Button onClick={copiarCorreo} className='hover:bg-sky-900 sm:bg-sky-900 sm:text-white hover:text-white transform transition-transform lg:hover:scale-105 duration-300 inline-flex items-center lg:px-5 lg:text-base lg:font-medium ' startIcon={<Email/>}>vazquezmartin1240@gmail.com</Button>
+                <div className='sm:max-w-[80%] lg:flex-row lg:mt-8 lg:gap-10 flex sm:flex-col sm:gap-5 sm:mt-2'>
+                    <Button onClick={descargarCv}  className='lg:bg-transparent xl:bg-transparent hover:bg-sky-900 sm:bg-sky-900 sm:text-white hover:text-white transform transition-transform lg:hover:scale-105 duration-300 inline-flex items-center lg:px-5 lg:text-base lg:font-medium sm:text-[10.5px] ' startIcon={<Download/>}>Descargar CV</Button>
+                    <Button onClick={copiarCorreo}  className='lg:bg-transparent xl:bg-transparent hover:bg-sky-900 sm:bg-sky-900 sm:text-white hover:text-white transform transition-transform lg:hover:scale-105 duration-300 inline-flex items-center lg:px-5 lg:text-base lg:font-medium sm:text-[10.5px] ' startIcon={<Email/>}>vazquezmartin1240@gmail.com</Button>
                 </div>
             </div>
         </section>
