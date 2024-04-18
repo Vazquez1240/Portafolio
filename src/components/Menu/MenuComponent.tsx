@@ -1,10 +1,14 @@
+'use client'
+
 import {Menu, Close} from "@mui/icons-material";
 import {Button} from "@mui/material";
 import {useState} from "react";
+import Link from "next/link";
 
 export const MenuComponent = () => {
 
     let [estado_menu, actualizarMenu] = useState(false)
+
 
     const manejarCambio = (event:any) => {
         actualizarMenu(!estado_menu)
@@ -23,8 +27,8 @@ export const MenuComponent = () => {
                         <div className={`sm:${estado_menu ? 'flex' : 'hidden'}  sm:mx-auto sm:w-full mt-2 `}>
                             <div className=" mx-auto  sm:flex-col sm:space-y-3 cursor-pointer w-full items-center justify-center  ">
 
-                                <div className=' text-center hover:text-blue-500 transition-colors duration-300'>
-                                    Proyectos
+                                <div   className=' text-center hover:text-blue-500 transition-colors duration-300'>
+                                    <Link href={'/proyectos'} >Proyectos</Link>
                                 </div>
                                 <div className=' text-center hover:text-blue-500 transition-colors duration-300'>
                                     Experiencia

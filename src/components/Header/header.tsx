@@ -1,6 +1,10 @@
+'use client'
+
 import {GitHub, LinkedIn} from "@mui/icons-material";
 import {LinkRedes} from "@/components/Link/LinkRedes";
 import {MenuComponent} from "@/components/Menu/MenuComponent";
+import Link from "next/link";
+
 export const Header = () => {
     return (
         <header className="mx-auto container lg:px-2 lg:pt-1  lg:w-[1240px] lg:flex-row lg:max-w-[100%] fixed sm:max-w-full ">
@@ -8,7 +12,7 @@ export const Header = () => {
                 <div className=" mx-auto xl:mt-0 flex gap-10 justify-start cursor-pointer">
 
                     <div className='hover:text-blue-500 transition-colors duration-300'>
-                        Proyectos
+                        <Link href={'/proyectos'} >Proyectos</Link>
                     </div>
                     <div className='hover:text-blue-500 transition-colors duration-300'>
                         Experiencia
