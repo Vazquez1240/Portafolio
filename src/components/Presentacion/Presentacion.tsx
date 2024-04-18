@@ -41,7 +41,7 @@ export const Presentacion = () => {
                     </div>
                 </div>
                 <span
-                    className=" font-semibold inline-flex bg-[linear-gradient(110deg,#b6eaff,45%,#065074,55%,#b6eaff)] bg-[length:250%_100%] bg-clip-text text-xl text-transparent">
+                    className=" xl:mt-0 lg:mt-0 md:mt-[3rem] font-semibold inline-flex bg-[linear-gradient(110deg,#b6eaff,45%,#065074,55%,#b6eaff)] bg-[length:250%_100%] bg-clip-text text-xl text-transparent">
                     Desarrollador Fullstack
                 </span>
                 <div className='max-w-full'>
