@@ -7,12 +7,16 @@ import Link from "next/link";
 
 export const Header = () => {
     return (
-        <header className="mx-auto container lg:px-2 lg:pt-1  lg:w-[1240px] lg:flex-row lg:max-w-[100%] fixed sm:max-w-full ">
+        <header
+            className="mx-auto container lg:px-2 lg:pt-1  lg:w-[1240px] lg:flex-row lg:max-w-[100%] fixed sm:max-w-full ">
+            <div className=' sm:flex md:block lg:hidden xl:hidden'>
+                <MenuComponent/>
+            </div>
             <div className="sm:hidden md:hidden  lg:flex xl:flex lg:justify-between lg:items-center mt-10 ">
                 <div className=" mx-auto xl:mt-0 flex gap-10 justify-start cursor-pointer">
 
                     <div className='hover:text-blue-500 transition-colors duration-300'>
-                        <Link href={'/proyectos'} >Proyectos</Link>
+                        <Link href={'/proyectos'}>Proyectos</Link>
                     </div>
                     <div className='hover:text-blue-500 transition-colors duration-300'>
                         Experiencia
@@ -30,9 +34,7 @@ export const Header = () => {
                                className='hover:text-blue-500 transition-colors duration-300'/>
                 </div>
             </div>
-            <div className=' sm:right-0 sm:flex md:block lg:hidden xl:hidden'>
-                <MenuComponent />
-            </div>
+
         </header>
 
     )

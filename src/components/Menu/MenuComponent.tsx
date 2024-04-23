@@ -16,8 +16,8 @@ export const MenuComponent = () => {
     }
 
     return (
-        <div className={`sm:mt-2 sm:text-white w-full absolute inset-0 h-[12rem] ${estado_menu ? 'backdrop-blur-sm' : null} `}>
-            <Button className='sm:flex' onClick={manejarCambio}
+        <div className={` sm:mt-5 sm:text-white absolute inset-0 h-[12rem] ${estado_menu ? 'backdrop-blur-sm' : null} `}>
+            <Button className='sm:flex sm:ml-[85%]' onClick={manejarCambio}
                     startIcon={estado_menu ? <Close className='text-white size-7'/> :
                         <Menu className='text-white size-7'/>}/>
             <div>
