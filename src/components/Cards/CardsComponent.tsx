@@ -7,7 +7,7 @@ export const CardsComponent = (props: { src: any; alt: any; height: any; width: 
     const {src, alt, height, width, titulo, descripcion} = props;
 
     return (
-        <Card className="mt-6 bg-amber-50 h-[96%] sm:w-80 md:w-80 lg:w-90 xl:w-90">
+        <Card className="mt-6 bg-blue-50  h-[96%] sm:w-80 md:w-80 lg:w-90 xl:w-90">
           <header color="blue-gray" className=" max-h-50 ">
             <img
               src={src}
