@@ -5,7 +5,7 @@ export const proyectos = [
         {
             titulo: 'Organizacion Oracle',
             descripcionCorta: "Este proyecto fue creado como parte de mi formacion en Oracle One Next, es un organizador creador con react, donde existen diferentes grupos. Tambien puedes crear nuevos grupos con su color establecidos.",
-            descripcionCompleta: "Este proyecto fue creado como parte de mi formacion en Oracle One Next, es un organizador creado con React, este proyecto solo cuenta con un apartado de frontend. Lo que hace esta app, es poder crear secciones donde podras guardar informacion de personas, por decir, tenemos el ejemplo de que tenemos un equipo de desarrollo, ahi podremos tener la informacion de todos los que conforman el equipo de desarrollo. Tambien puedes crear nuevos grupos, escogerles un color unico o tambien puedes modificar ese color.",
+            descripcionCompleta: "Este proyecto fue creado como parte de mi formación en Oracle One Next. Se trata de un organizador desarrollado con React, centrándose exclusivamente en el frontend. La funcionalidad principal de esta aplicación radica en la capacidad de crear secciones donde se puede almacenar información relativa a individuos. Por ejemplo, si contamos con un equipo de desarrollo, podemos registrar los detalles de cada miembro del equipo. Además, la aplicación permite la creación de nuevos grupos, la asignación de colores distintivos a estos grupos y la posibilidad de modificar dichos colores.",
             src : '/img/org-six.png',
             texto : 'organizador',
             altura: '100%',
@@ -15,7 +15,8 @@ export const proyectos = [
         },
         {
             titulo: 'Utiles escolares',
-            descripcionCorta: "Este proyecto es una prueba tecnica. Es un registro para utiles escolares. Puedes crear paquetes, marcar como entregado y buscar un paquete por la CURP del padre o hijo.",
+            descripcionCorta: "Este proyecto constituye un sistema de registro para útiles escolares. Permite la creación de paquetes, la marcación de estos como entregados, así como la búsqueda de paquetes mediante la CURP del padre o del hijo.",
+            descripcionCompleta: 'Este proyecto representó una evaluación técnica para optar a un puesto en Gobierno Digital de la ciudad de Monterrey, Nuevo León. Consistió en el desarrollo de una aplicación que funcionara como un preregistro para la entrega de útiles escolares. En esta aplicación, el tutor (padre de familia) podía registrar a un beneficiario (hijo) proporcionando datos como su CURP, colonia, municipio, entre otros. Un aspecto crucial de la aplicación es el rol del funcionario, quien puede iniciar sesión y buscar paquetes por número de entrega, CURP del tutor o del hijo. Además, puede verificar el estado del paquete, si ya ha sido entregado o no, y también marcar un paquete como entregado. El proyecto se divide en dos partes: el frontend desarrollado con React y el backend con Django Rest Framework, encargado de la creación de las API REST.',
             src: '/img/utiles-front.png',
             texto: 'utiles-frontend',
             altura: '100%',

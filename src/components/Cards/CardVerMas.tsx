@@ -3,7 +3,7 @@ import DialogContent from '@mui/material/DialogContent';
 import {DialogTitle, DialogActions} from "@mui/material";
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/Button';
-
+import Link from 'next/link'
 
 export const CardVerMas = (props:any) => {
 
@@ -33,11 +33,12 @@ export const CardVerMas = (props:any) => {
             <DialogActions>
                 {fullstack ?
                     <div className='flex'>
-                        <Button >Repositorio BackEnd</Button>
+                        <Button>Repositorio BackEnd</Button>
                         <Button>Repositorio FrontEnd</Button>
-                        <Button>Repositorio completo</Button>
                     </div>:
-                    <div>no es full</div>}
+                    <div>
+                        <Button><Link href={link}>Ver repositorio</Link></Button>
+                    </div>}
             </DialogActions>
         </Dialog>
     )
