@@ -35,7 +35,7 @@ export const proyectos = [
             altura: '100%',
             ancho: '100%',
             fullstack: false,
-            link: 'https://vazquez1240.github.io/encriptador/',
+            link: 'https://github.com/Vazquez1240/vazquez1240.github.com/tree/main/encriptador',
             envivo: {online:true, link:'https://vazquez1240.github.io/encriptador/'},
         },
         {
@@ -54,7 +54,7 @@ export const proyectos = [
             titulo: 'Clima',
             descripcionCorta: 'Esta es una app para ver el clima en tu ciudad, esta app esta conectada a una API Meteorologica, donde puedes buscar las ciudades para ver su clima y dependiendo del clima sera la imagen a mostrar.',
             descripcionCompleta: 'Esta aplicación fue un proyecto personal en el que se empleó una API meteorológica para proporcionar información climática de diferentes ciudades. Los usuarios pueden buscar su ciudad para obtener el pronóstico del clima, y según las condiciones climáticas, se muestra una imagen y datos correspondientes. Por ejemplo, si se espera un día soleado, se mostrará una imagen de un sol brillante; si se espera nubosidad, se mostrará un sol entre nubes, y así sucesivamente, ofreciendo diversas representaciones visuales según las condiciones climáticas.',
-            link: 'https://vazquez1240.github.io/clima/',
+            link: 'https://github.com/Vazquez1240/vazquez1240.github.com/tree/main/clima',
             src: 'img/clima.png',
             texto: 'Clima',
             altura: '100%',
