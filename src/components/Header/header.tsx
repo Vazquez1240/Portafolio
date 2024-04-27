@@ -16,6 +16,10 @@ export const Header = () => {
                 <div className=" mx-auto xl:mt-0 flex gap-10 justify-start cursor-pointer">
 
                     <div className='hover:text-blue-500 transition-colors duration-300'>
+                        <Link href={'/'}>Home</Link>
+                    </div>
+
+                    <div className='hover:text-blue-500 transition-colors duration-300'>
                         <Link href={'/proyectos'}>Proyectos</Link>
                     </div>
                     <div className='hover:text-blue-500 transition-colors duration-300'>

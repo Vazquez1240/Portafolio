@@ -1,13 +1,25 @@
+'use client'
+
 import {Card, CardContent, CardActions, Typography} from "@mui/material";
-import {CardHeader} from "@mui/material";
 import Button from "@mui/material/Button";
+import {CardVerMas} from "@/components/Cards/CardVerMas";
+import {useState} from "react";
 
-export const CardsComponent = (props: { src: any; alt: any; height: any; width: any; titulo: any; descripcion:any;}) => {
+export const CardsComponent = (props: { src: any; alt: any; height: any; width: any; titulo: any; descripcion:any; descripcionCompleta:any; link:any; fullstack:any}) => {
 
-    const {src, alt, height, width, titulo, descripcion} = props;
+    const {src, alt, height, width, titulo, descripcion, descripcionCompleta, link, fullstack} = props;
+
+    const [showCardVerMas, setShowCardVerMas] = useState(false);
+
+    const handleVerMasClick = () => {
+        setShowCardVerMas(true);
+    }
+
 
     return (
         <Card className="mt-6 bg-blue-50  h-[96%] sm:w-80 md:w-80 lg:w-90 xl:w-90">
+          {showCardVerMas && <CardVerMas actualizarValor={setShowCardVerMas}  visible={showCardVerMas} titulo={titulo} descripcion={descripcionCompleta} link={link}
+                                                                              fullstack={fullstack}/>}
           <header color="blue-gray" className=" max-h-50 ">
             <img
               src={src}
@@ -25,7 +37,7 @@ export const CardsComponent = (props: { src: any; alt: any; height: any; width: 
             </Typography>
           </CardContent>
           <CardActions className="pt-0 justify-end">
-            <Button className='bg-indigo-600 text-white hover:bg-indigo-500 '>Ver mas</Button>
+            <Button onClick={handleVerMasClick} className='bg-indigo-600 text-white hover:bg-indigo-500 '>Ver mas</Button>
           </CardActions>
       </Card>
     )

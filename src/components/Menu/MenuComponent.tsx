@@ -26,9 +26,11 @@ export const MenuComponent = () => {
 
                         <div className={`sm:${estado_menu ? 'flex' : 'hidden'}  sm:mx-auto sm:w-full mt-2 `}>
                             <div className=" mx-auto  sm:flex-col sm:space-y-3 cursor-pointer w-full items-center justify-center  ">
-
-                                <div   className=' text-center hover:text-blue-500 transition-colors duration-300'>
-                                    <Link href={'/proyectos'} >Proyectos</Link>
+                                <div className=' text-center hover:text-blue-500 transition-colors duration-300'>
+                                    <Link href={'/'}>Home</Link>
+                                </div>
+                                <div className=' text-center hover:text-blue-500 transition-colors duration-300'>
+                                    <Link href={'/proyectos'}>Proyectos</Link>
                                 </div>
                                 <div className=' text-center hover:text-blue-500 transition-colors duration-300'>
                                     Experiencia

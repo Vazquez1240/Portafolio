@@ -20,7 +20,10 @@ export default function ProyectosPage() {
                             alt={proyecto.texto}
                             height={proyecto.altura}
                             width={proyecto.ancho}
-                            descripcion={proyecto.descripcion}
+                            descripcion={proyecto.descripcionCorta}
+                            descripcionCompleta={proyecto.descripcionCompleta}
+                            link={proyecto.link}
+                            fullstack={proyecto.fullstack}
                         />
                     ))}
                 </div>
