@@ -28,7 +28,7 @@ export const CardsComponent = (props: { src: any; alt: any; height: any; width: 
               height={height}
             />
           </header>
-          <CardContent className='h-[50%]'>
+          <CardContent className='h-[50%] overflow-auto'>
             <Typography variant="h5" color="blue-gray" className="mb-2">
               {titulo}
             </Typography>
@@ -36,9 +36,11 @@ export const CardsComponent = (props: { src: any; alt: any; height: any; width: 
                 {descripcion}
             </Typography>
           </CardContent>
-          <CardActions className="pt-0 justify-end">
-            <Button onClick={handleVerMasClick} className='bg-indigo-600 text-white hover:bg-indigo-500 '>Ver mas</Button>
-          </CardActions>
+          <div className='flex justify-end top-0'>
+              <CardActions>
+                <Button onClick={handleVerMasClick} className='bg-indigo-600 text-white hover:bg-indigo-500 '>Ver mas</Button>
+              </CardActions>
+          </div>
       </Card>
     )
 }
