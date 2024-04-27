@@ -24,6 +24,7 @@ export default function ProyectosPage() {
                             descripcionCompleta={proyecto.descripcionCompleta}
                             link={proyecto.link}
                             fullstack={proyecto.fullstack}
+                            envivo={proyecto.envivo}
                         />
                     ))}
                 </div>

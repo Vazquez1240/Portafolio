@@ -5,9 +5,9 @@ import Button from "@mui/material/Button";
 import {CardVerMas} from "@/components/Cards/CardVerMas";
 import {useState} from "react";
 
-export const CardsComponent = (props: { src: any; alt: any; height: any; width: any; titulo: any; descripcion:any; descripcionCompleta:any; link:any; fullstack:any}) => {
+export const CardsComponent = (props: { src: any; alt: any; height: any; width: any; titulo: any; descripcion:any; descripcionCompleta:any; link:any; fullstack:any; envivo:any}) => {
 
-    const {src, alt, height, width, titulo, descripcion, descripcionCompleta, link, fullstack} = props;
+    const {src, alt, height, width, titulo, descripcion, descripcionCompleta, link, fullstack, envivo} = props;
 
     const [showCardVerMas, setShowCardVerMas] = useState(false);
 
@@ -19,7 +19,7 @@ export const CardsComponent = (props: { src: any; alt: any; height: any; width: 
     return (
         <Card className="mt-6 bg-blue-50  h-[96%] sm:w-80 md:w-80 lg:w-90 xl:w-90">
           {showCardVerMas && <CardVerMas actualizarValor={setShowCardVerMas}  visible={showCardVerMas} titulo={titulo} descripcion={descripcionCompleta} link={link}
-                                                                              fullstack={fullstack}/>}
+                                                                              fullstack={fullstack} envivo={envivo}/>}
           <header color="blue-gray" className=" max-h-50 ">
             <img
               src={src}

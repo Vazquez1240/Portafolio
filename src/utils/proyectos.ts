@@ -11,7 +11,9 @@ export const proyectos = [
             altura: '100%',
             ancho: '100%',
             fullstack: false,
-            link: 'https://github.com/Vazquez1240/Org'
+            link: 'https://github.com/Vazquez1240/Org',
+            envivo: {online:true, link:'https://org-six-coral.vercel.app/'},
+
         },
         {
             titulo: 'Utiles escolares',
@@ -21,16 +23,19 @@ export const proyectos = [
             texto: 'utiles-frontend',
             altura: '100%',
             ancho: '100%',
-            fullstack: true
+            fullstack: true,
+            link: {Backend:'https://github.com/Vazquez1240/Utiles-Backend', Frontend:'https://github.com/Vazquez1240/Utiles-Frontend'}
         },
         {
-            titulo: 'Desencriptador',
+            titulo: 'Encriptador',
             descripcionCorta: "Este proyecto fue los primeros que hice como parte en mi formacion en Oracle One Next, es un encriptador y desencriptador de texto.",
             src : '/img/desencriptador.png',
-            texto: 'desencriptador',
+            texto: 'encriptador',
             altura: '100%',
             ancho: '100%',
-            fullstack: false
+            fullstack: false,
+            link: 'https://vazquez1240.github.io/encriptador/',
+            envivo: {online:true, link:'https://vazquez1240.github.io/encriptador/'},
         },
         {
             titulo: 'Alura Geek',
@@ -39,12 +44,14 @@ export const proyectos = [
             texto: 'Alura Geek',
             altura: '100%',
             ancho: '100%',
-            fullstack: false
+            fullstack: false,
+            link: 'https://github.com/Vazquez1240/Org',
+            envivo: {online:false, link:''},
         },
         {
             titulo: 'Clima',
             descripcionCorta: 'Esta es una app para ver el clima en tu ciudad, esta app esta conectada a una API Meteorologica, donde puedes buscar las ciudades para ver su clima y dependiendo del clima sera la imagen a mostrar.',
-
+            link: 'https://vazquez1240.github.io/clima/',
             src: 'img/clima.png',
             texto: 'Clima',
             altura: '100%',

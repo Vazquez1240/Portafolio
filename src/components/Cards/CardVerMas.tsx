@@ -7,7 +7,8 @@ import Link from 'next/link'
 
 export const CardVerMas = (props:any) => {
 
-    let {actualizarValor, visible, titulo, descripcion, link, fullstack} = props;
+    let {actualizarValor, visible, titulo, descripcion, link, fullstack, envivo} = props;
+
 
     const cerrarVentana = () => {
         actualizarValor(false)
@@ -33,12 +34,18 @@ export const CardVerMas = (props:any) => {
             <DialogActions>
                 {fullstack ?
                     <div className='flex'>
-                        <Button>Repositorio BackEnd</Button>
-                        <Button>Repositorio FrontEnd</Button>
-                    </div>:
-                    <div>
+                        <Button><Link href={link.Backend}>Repositorio BackEnd</Link></Button>
+                        <Button><Link href={link.Frontend}>Repositorio Frontend</Link></Button>
+                    </div>
+                    :
+                    <div className='flex gap-2'>
+                        {
+                            envivo.online ?
+                                <Button><Link href={envivo.link}>En vivo</Link></Button>: null
+                        }
                         <Button><Link href={link}>Ver repositorio</Link></Button>
-                    </div>}
+                    </div>
+                }
             </DialogActions>
         </Dialog>
     )
