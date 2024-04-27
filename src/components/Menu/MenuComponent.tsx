@@ -34,6 +34,7 @@ export const MenuComponent = () => {
                         </div>
                     </div>
                 ) : null}
+
             </div>
         </div>
     );
