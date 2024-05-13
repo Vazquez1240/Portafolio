@@ -25,9 +25,6 @@ export const Header = () => {
                     <div className='hover:text-blue-500 transition-colors duration-300'>
                         Experiencia
                     </div>
-                    <div className='hover:text-blue-500 transition-colors duration-300'>
-                        Proyectos donde participe
-                    </div>
 
                 </div>
 

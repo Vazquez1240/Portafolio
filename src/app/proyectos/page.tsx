@@ -2,6 +2,7 @@ import {Card, CardContent} from "@mui/material";
 import {Header} from "@/components/Header/header";
 import {CardsComponent} from "@/components/Cards/CardsComponent";
 import {proyectos} from "@/utils/proyectos";
+import {Footer} from "@/components/Header/Footer";
 
 
 export default function ProyectosPage() {
@@ -29,7 +30,7 @@ export default function ProyectosPage() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </main>
-
     )
 }

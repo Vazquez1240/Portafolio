@@ -30,7 +30,6 @@ export const MenuComponent = () => {
                                 <Link href={"/proyectos"} onClick={ocultarMenu}>Proyectos</Link>
                             </div>
                             <div className="text-center hover:text-blue-500 transition-colors duration-300">Experiencia</div>
-                            <div className="text-center hover:text-blue-500 transition-colors duration-300">Proyectos donde participe</div>
                         </div>
                     </div>
                 ) : null}
