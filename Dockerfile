@@ -1,15 +1,20 @@
-FROM node:22-alpine
+# Etapa de construcción
+FROM node:22-alpine AS build
 
-WORKDIR /src/app
+WORKDIR /app
 
-COPY package.json /
-
+COPY package*.json ./
 RUN npm install
 
-COPY . /
-
+COPY . .
 RUN npm run build
 
-EXPOSE 3000
+# Etapa de producción
+FROM nginx:alpine
 
-CMD ["npm" , "start"]
+COPY --from=build /app/.next /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
+
